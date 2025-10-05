@@ -10,7 +10,7 @@ WORKDIR /app
 
 # Instalar dependencias del sistema 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libgomp1 libgl1-mesa-glx && \
+    libgomp1 libgl1 && \
     rm -rf /var/lib/apt/lists/*
 
 # Instalar dependencias de Python
